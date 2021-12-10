@@ -1,0 +1,316 @@
+*{
+ margin:0;
+ padding:0;   
+}
+body{
+    background-color: #2b5ea1;
+}
+.ltrspc2{
+    letter-spacing: 2.5px;
+}
+.cleaner{
+    clear: both;
+}
+.levo{
+    float:left;
+}
+.desno{
+    float:right;
+}
+
+@keyframes iconSpin {
+    from{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(330deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }   
+}
+#logoIme{
+    height: 100%;
+    float:left;
+    padding-left: 10%;
+}
+
+#social{
+    float:right;
+    padding-right: 10%;
+    position: relative;
+    top: 20px;
+}
+
+#social ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#social ul li i{
+    font-size: 40px;
+    color: #eaea05;
+}
+
+#social ul li i:hover{
+    animation: iconSpin 1s;
+}
+
+#ime{
+    font-family: 'Oswald', sans-serif;
+    float:left;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#ime strong{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+#logoLinija{
+    width: 100%;
+    height: 80px;
+    background-color: #2b5ea1;
+}
+
+#logo{
+    background-image: url("../images/icon.png");
+    background-size: cover;
+    width: 60px;
+    height: 90%;
+    float: left;
+}
+
+#meniLinija{  
+    background: white;
+    display: flex;
+    width: 100%;
+    border-top: 3px solid #55b8ed;
+    border-bottom: 3px solid #55b8ed; 
+    justify-content: center;
+}
+
+#meni{
+    position: relative;
+}
+
+#meni ul {
+    list-style-type: none;
+    
+}
+
+#meni ul li{
+    display: inline-block;
+    margin-inline: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+#meni ul li:hover{
+    background:#eaea05;
+}
+
+#meni ul li a{
+    color: #2b5ea1;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#sredina{
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+}
+#naslovna{
+    width: 80%;
+    margin: 30px auto;
+}
+#naslovna img{
+    border-radius: 3px;
+    width:100%;
+}
+#tekst{
+    position: relative;
+    margin: 0px auto;
+    width: 70%;
+    padding:40px;
+    font-size: 1.8rem;
+
+}
+#naslovna::before{
+    content: "ОФК БОЖДАРЕВАЦ";
+    position: absolute;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    background-color:#2b5ea1;
+    top: 60%;
+    box-shadow: 10px 10px 10px black;
+    transition: ease-in 300ms;
+    transform-origin: left;
+}
+#tekst p{ 
+    text-align: justify;
+    color: #2b5ea1;
+    font-family: 'Oswald', sans-serif;
+}
+.kontakt::before{
+    content: "КОНТАКТ ИНФОРМАЦИЈЕ";
+    position: absolute;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    background-color:#2b5ea1;
+    top: -4.5rem;
+    left: 29%; 
+    transition: ease-in 300ms;
+}
+.kontakt::before:hover{
+    box-shadow: 10px 10px 10px black;
+    transform:scale(1.01);
+}
+.kontakt{
+    position: relative;
+    display: grid;
+    width: 95%;
+    margin: 40px auto;
+    gap: 15px;
+    padding-block: 2rem;
+    grid-template-columns: repeat(3,1fr);
+}
+.kon{
+    padding: 2rem;
+    max-width: 100%;
+    border: 3px solid #2b5ea1; 
+    border-radius: 5px;
+    display: flex;
+    gap: 2rem;
+    transition: 200ms;
+}
+.kon:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px black;
+}
+.kon img{
+    height: 8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+#kongrb img{
+    border-radius: 0;
+    height: 6rem;
+    aspect-ratio: 0;
+}
+
+.koninfo ul{
+    font-family: 'Oswald', sans-serif;
+    color: #2b5ea1;
+    list-style-type: none;
+}
+.koninfo ul li a{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+.kon a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: #2b5ea1;
+    text-decoration: none;
+    margin-inline: 3rem;
+}
+.kon h2{
+    font-size: 1.7rem;
+    font-family: 'Oswald', sans-serif;
+    color: #2b5ea1;
+}
+
+.span-tri{
+    grid-column: span 3;
+}
+.span-dva{
+    grid-column: span 2;
+}
+.span-cetri{
+    grid-column: span 4;
+}
+.red-dva{
+    grid-row: span 2;
+}
+.just{
+    align-self: center;
+}
+.all{
+    justify-self: center;
+}
+
+form{
+    display: block;
+}
+form input{
+    border: 3px solid #2b5ea1;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+form textarea{
+    border: 3px solid #2b5ea1;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.subbtn input{
+    background-color: #2b5ea1;
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+}
+#radiogde{
+    margin: 1rem;
+}
+#radiogde input{
+    margin-inline-start: 1rem;
+}
+#radiogde label{
+    font-size: 1.3rem;
+    font-family: 'Oswald', sans-serif;
+    color: #2b5ea1;
+}
+.frm{
+    justify-content: space-evenly;
+}
+.form-flex{
+    display: block;
+}
+#podnozje{
+    width: 100%;
+    background-color: #c0c6c8;
+}
+#podnozje ul li{
+    display: inline-block;
+    margin: 1em 2em 0 2em;
+}
+#podnozj ul{
+    list-style-type: none;
+}
+#podnozje ul li pre{
+    font-family: 'Oswald', sans-serif;
+}
+#podnozje i{
+    font-size: 1.5em;
+}

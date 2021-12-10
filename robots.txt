@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /images/igraci
+Disallow: /admin

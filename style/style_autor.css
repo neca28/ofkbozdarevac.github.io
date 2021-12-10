@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;   
+   }
+body{
+    background-color: #2b5ea1;
+}
+
+.cleaner{
+    clear: both;
+}
+
+@keyframes iconSpin {
+    from{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(330deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }   
+}
+
+#logoIme{
+    height: 100%;
+    float:left;
+    padding-left: 10%;
+}
+
+#social{
+    float:right;
+    padding-right: 10%;
+    position: relative;
+    top: 20px;
+}
+
+#social ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#social ul li i{
+    font-size: 40px;
+    color: #eaea05;
+}
+
+#social ul li i:hover{
+    animation: iconSpin 1s;
+}
+
+#ime{
+    font-family: 'Oswald', sans-serif;
+    float:left;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.ltrspc2{
+    letter-spacing: 2.5px;
+}
+#ime strong{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+#logoLinija{
+    width: 100%;
+    height: 80px;
+    background-color: #2b5ea1;
+}
+
+#logo{
+    background-image: url("../images/icon.png");
+    background-size: cover;
+    width: 60px;
+    height: 90%;
+    float: left;
+}
+
+#meniLinija{  
+    background: white;
+    display: flex;
+    width: 100%;
+    border-top: 3px solid #55b8ed;
+    border-bottom: 3px solid #55b8ed; 
+    justify-content: center;
+}
+
+#meni{
+    position: relative;
+}
+
+
+#meni ul {
+    list-style-type: none;
+    
+}
+
+#meni ul li{
+    display: inline-block;
+    margin-inline: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+#meni ul li:hover{
+    background:#eaea05;
+}
+
+#meni ul li a{
+    color: #2b5ea1;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#sredina{
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#sadrzaj{
+    display: flex;
+   justify-content: space-between; 
+}
+   
+#tekstAutor{
+    width: 40%;
+    margin-top: 50px;
+    margin-right: 50px;
+    text-align: center;
+}  
+
+#slika_autor{
+    background-image: url("../images/slika_autor.JPG");
+    width: 40%;
+    background-size: cover;
+    height: 700px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 500ms;
+}
+#slika_autor:hover{
+    transform: scale(1.05); 
+    box-shadow: 0 10px 10px black ; 
+}
+#slika_autor:hover div{
+    transform: scale(1.05); 
+    visibility: visible;
+    background-color: black;
+    opacity: 90%;
+    color: white;
+    font-size: 40px;
+}
+
+#bar{
+    background-color: black;
+    opacity: 40%;
+    height: 150px;
+    color: transparent;
+    text-align: center;
+    position: relative;
+    top: 550px;
+    transition: 500ms;
+}
+
+#bar p{
+    padding-top: 15px;
+    font-family: 'Oswald', sans-serif;
+    color: none; 
+}
+
+#tekstAutor p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.3rem;
+    color: #2b5ea1;
+}
+
+#tekstAutor h1{
+    letter-spacing: 0.2rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    color: #2b5ea1;
+}
+
+#podnozje{
+    width: 100%;
+    background-color: #c0c6c8;
+}
+#podnozje ul li{
+    display: inline-block;
+    margin: 1em 2em 0 2em;
+}
+#podnozj ul{
+    list-style-type: none;
+}
+#podnozje ul li pre{
+    font-family: 'Oswald', sans-serif;
+}
+#podnozje i{
+    font-size: 1.5em;
+}
+
+.levo{
+    float:left;
+}
+.desno{
+    float:right;
+}

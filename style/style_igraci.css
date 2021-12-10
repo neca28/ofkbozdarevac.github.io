@@ -1,0 +1,412 @@
+
+*{
+    margin:0;
+    padding:0;   
+   }
+body{
+    background-color: #2b5ea1;
+}
+
+.ltrspc2{
+    letter-spacing: 2.5px;
+}
+
+.cleaner{
+    clear: both;
+}
+
+@keyframes iconSpin {
+    from{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(30deg);
+    }
+    75%{
+        transform: rotate(330deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }   
+}
+
+#logoIme{
+    height: 100%;
+    float:left;
+    padding-left: 10%;
+}
+
+#social{
+    float:right;
+    padding-right: 10%;
+    position: relative;
+    top: 20px;
+}
+
+#social ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#social ul li i{
+    font-size: 40px;
+    color: #eaea05;
+}
+
+#social ul li i:hover{
+    animation: iconSpin 1s;
+}
+
+#ime{
+    font-family: 'Oswald', sans-serif;
+    float:left;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#ime strong{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+#logoLinija{
+    width: 100%;
+    height: 80px;
+    background-color: #2b5ea1;
+}
+
+#logo{
+    background-image: url("../images/icon.png");
+    background-size: cover;
+    width: 60px;
+    height: 90%;
+    float: left;
+}
+
+#meniLinija{  
+    background: white;
+    display: flex;
+    width: 100%;
+    border-top: 3px solid #55b8ed;
+    border-bottom: 3px solid #55b8ed; 
+    justify-content: center;
+}
+
+#meni{
+    position: relative;
+}
+
+
+#meni ul {
+    list-style-type: none;
+    
+}
+
+#meni ul li{
+    display: inline-block;
+    margin-inline: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+#meni ul li:hover{
+    background:#eaea05;
+}
+
+#meni ul li a{
+    color: #2b5ea1;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+#meni ul li a:active{
+    color: #55b8ed;
+}
+#sadrzaj{
+    display: block;
+}
+
+#sredina{
+    display: block;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: 20px auto;
+    padding-top: 1rem;
+} 
+#teren{
+    position: relative;
+    margin: 40px auto 10px;
+    width: 920px;
+    height: 800px;
+    background-size:cover;
+    background-image: url("../images/teren2.png");
+    background-repeat: no-repeat;
+}
+.igrac{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 10rem;
+    width: 7rem;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+.igrac::after{
+    content:"";
+    height: 4.95rem;
+    width: 4.95rem;
+    transform: rotate(45deg);
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.1) 45%, rgba(0,0,0,1) 50%, #223bb5) ;
+    position: absolute;
+    top:75%;
+    left:15%; 
+    
+}
+.igrac::before{
+    text-align: center;
+    position: absolute;
+    content: "";
+    background-color: rgba(0,0,0,0.7);
+    color:white;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+.igrac:hover::after{
+    transition: 200ms;
+    box-shadow: 10px 10px 10px black;
+}
+.igrac:hover{
+    transition: 200ms;
+    transform: scale( 1.05);
+    box-shadow: 0px 10px 10px black;
+}
+.igrac:hover::before{
+    transition: 500ms;
+    visibility: visible;
+}
+
+#id1{
+    border: 2px solid black;
+    background-image: url(../images/igraci/1.JPG);
+    background-size: cover;
+    position: absolute;
+    top: 67%;
+    left: 43%;   
+}
+#id1::after{
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.1) 45%, rgba(0,0,0,1) 50%, yellow) ;
+}
+#id1::before{
+    content: "ГОСИЋ ЛУКА";
+}
+#id2{
+    background-image: url(../images/igraci/16.JPG);
+    background-size: cover;
+    position: absolute;
+    top: 53%;
+    left: 29%;   
+}
+#id2::before{
+    content: "АРСЕНИЈЕВИЋ НЕМАЊА";
+}
+#id3{
+    background-image: url(../images/igraci/5.JPG);
+    background-size: cover;
+    position: absolute;
+    top: 53%;
+    left: 57%;   
+}
+#id3::before{
+    content: "НЕШИЋ АЛЕКСАНДАР";
+}
+#id4{
+    background-image: url(../images/igraci/3.JPG);
+    background-size: cover;
+    position: absolute;
+    top: 48%;
+    left: 10%;   
+}
+#id4::before{
+    content: "НЕШИЋ НИКОЛА";
+}
+#id5{
+    background-image: url(../images/igraci/2.JPG);
+    background-size: cover;
+    position: absolute;
+    top: 48%;
+    left: 77.5%;   
+}
+#id5::before{
+    content: "ЛАЗИЋ ДРАГАН";
+}
+
+#id6{
+    background-image: url(../images/igraci/13.JPG);
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    left: 35%;   
+}
+#id6::after{
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.1) 45%, rgba(0,0,0,1) 50%, #66ff33) ;
+}
+#id6::before{
+    content: "НЕШИЋ НИКОЛА";
+}
+
+#id7{
+    background-image: url(../images/igraci/7.JPG);
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    left: 51%;   
+}
+#id7::after{
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.1) 45%, rgba(0,0,0,1) 50%, #66ff33) ;
+}
+#id7::before{
+    content: "ЈОВИЧИЋ ИВАН";
+}
+
+#id8{
+    background-image: url(../images/igraci/11.JPG);
+    background-size: cover;
+    position: absolute;
+    top: 15%;
+    left: 10%;   
+}
+#id8::after{
+    
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.1) 45%, rgba(0,0,0,1) 50%, #66ff33) ;
+}
+#id8::before{
+    content: "ГОСИЋ ДУШАН";
+}
+
+#id9{
+    background-image: url(../images/igraci/8.JPG);
+    background-size: cover;
+    position: absolute;
+    top: 15%;
+    left: 77%;   
+}
+#id9::after{
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.1) 45%, rgba(0,0,0,1) 50%, #66ff33) ;
+}
+#id9::before{
+    content: "ЈОВАНОВИЋ ДУШАН";
+}
+
+#id10{
+    background-image: url(../images/igraci/10.1.JPG);
+    background-size: cover;
+    position: absolute;
+    top: -3%;
+    left: 32%;   
+}
+#id10::after{
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.1) 45%, rgba(0,0,0,1) 50%, #bf0000) ;
+}
+#id10::before{
+    content: "ВАСИЋ ИВАН";
+}
+
+#id11{
+    background-image: url(../images/igraci/14.JPG);
+    background-size: cover;
+    position: absolute;
+    top: -5%;
+    left: 50%;   
+}
+#id11::after{
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0), rgba(0,0,0,0.1) 45%, rgba(0,0,0,1) 50%, #bf0000   ) ;
+}
+#id11::before{
+    content: "ПУПОВАЦ ТОДОР";
+}
+
+#trener{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    background-image: url("../images/trener.jpg");
+    padding-bottom: 2.5rem;
+}
+#trener-slika{
+    border-radius: 3px;
+    background-image: url("../images/igraci/trener.jpg");
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    margin: 1rem 1rem 0 1rem;
+    transition: 200ms;
+}
+#trener-slika:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px black;
+}
+#trener-tekst{
+    position: relative;
+    width: 60%;
+    margin-top: 1rem;
+    padding-top: 4rem;
+}
+#trener-tekst::before{
+    content:"ТРЕНЕР";
+    position: absolute;
+    left: 37%;
+    top: 0; 
+    padding: 0.3rem 1rem;
+    background-color: #2b5ea1;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+#trener-tekst h2{
+    color: #2b5ea1;
+    font-family: 'Oswald', sans-serif;
+    text-indent: 2rem;
+    font-size: 2rem;
+}
+#trener-tekst p{
+    text-align: center;
+    color: #2b5ea1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+#podnozje{
+    width: 100%;
+    background-color: #c0c6c8;
+}
+#podnozje ul li{
+    display: inline-block;
+    margin: 1em 2em 0 2em;
+}
+#podnozj ul{
+    list-style-type: none;
+}
+#podnozje ul li pre{
+    font-family: 'Oswald', sans-serif;
+}
+#podnozje i{
+    font-size: 1.5em;
+}
+
+.levo{
+    float:left;
+}
+.desno{
+    float:right;
+}

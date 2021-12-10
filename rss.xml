@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>ОФК БОЖДАРЕВАЦ</title>
+  <link>https://www.w3schools.com</link>
+  <description>Фудбалски клуб из Бождаревца</description>
+  <item>
+    <title>О НАМА</title>
+    <link>https://www.w3schools.com/xml/xml_rss.asp</link>
+    <description>Информације о клубу</description>
+  </item>
+</channel>
+
+</rss>
